@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
 	<title>Word Count</title>
-	<link href="css/styles.css" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet"> 
 </head>
 <body>
 <header>
@@ -11,18 +11,20 @@
 
 <h2>Word Count Calculator</h2>
 </header>
-
+<div>
 <form>
 <div>
-<p><input id="words-current" type="text" placeholder="Enter a number"/> Current Completed Words</p>
+<input id="words-current" type="text" placeholder="Enter a number"> 
+<label for="words-current">Current Completed Words</label>
+</div>
+<div>
+<input id="words-today" type="text" placeholder="Enter a number">
+<label for="words-today">Words Completed Today</label>
 </div>
 
 <div>
-<p><input id="words-today" type="text" placeholder="Enter a number"/> Words Completed Today</p>
-</div>
-
-<div>
-<p><input id="words-end-goal" type="text" placeholder="Enter a number"/> Total Word Count Goal</p>
+<input id="words-end-goal" type="text" placeholder="Enter a number">
+<label for="words-end-goal>Total Word Count Goal</label>
 </div>
 
 <div id="answer">
@@ -31,5 +33,6 @@
 
 <div><button onclick="calculateWords()" type="button">How Many Days Left?</button></div>
 </form>
-<script src="js/scripts.js"></script></body>
+<script src="js/scripts.js"></script>
+</body>
 </html>
