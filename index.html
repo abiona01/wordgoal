@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Word Count</title>
+	<link href="css/styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet"> 
+</head>
+<body>
+<header>
+<h1>Writer&#39;s Companion</h1>
+
+<h2>Word Count Calculator</h2>
+</header>
+
+<form>
+<div>
+<p><input id="words-current" type="text" placeholder="Enter a number"/> Current Completed Words</p>
+</div>
+
+<div>
+<p><input id="words-today" type="text" placeholder="Enter a number"/> Words Completed Today</p>
+</div>
+
+<div>
+<p><input id="words-end-goal" type="text" placeholder="Enter a number"/> Total Word Count Goal</p>
+</div>
+
+<div id="answer">
+<p id="answerText"></p>
+</div>
+
+<div><button onclick="calculateWords()" type="button">How Many Days Left?</button></div>
+</form>
+<script src="js/scripts.js"></script></body>
+</html>
